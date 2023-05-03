@@ -1,0 +1,346 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
+/* font-family: 'Raleway', sans-serif; */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0 auto;
+  max-width: 1920px;
+  font-family: "Raleway", sans-serif;
+}
+.header {
+  /* background-image: url("../img/header/bg.jpg"); */
+  position: relative;
+  color: #e7e7e7;
+  height: 100vh;
+}
+.header__text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 528px;
+  max-height: 285px;
+}
+/* Nvigation */
+.header-nav {
+  display: flex;
+  position: relative;
+  margin-left: 24px;
+  padding-top: 16px;
+  align-items: center;
+  max-width: 1615px;
+}
+.header-nav::before {
+  content: "";
+  position: absolute;
+  right: -22px;
+  bottom: 0;
+  width: 1415px;
+  border-radius: 5px;
+  border-bottom: 1px dashed #d9d9d9;
+}
+.logo {
+  min-width: 91px;
+  min-height: 81px;
+}
+
+.header-slider__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.nav {
+  display: flex;
+  position: relative;
+  padding-left: 133px;
+  padding-right: 46px;
+  column-gap: 35px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.nav__contact {
+  display: flex;
+  text-align: center;
+  padding-left: 46px;
+}
+
+.nav__contact a {
+  color: #e7e7e7;
+  font-weight: 700;
+  font-size: 22.41px;
+  line-height: 26px;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.nav__contact__text {
+  font-size: 18px;
+  line-height: 1.16;
+  text-decoration-line: underline;
+}
+
+/* Main */
+.main {
+  overflow: hidden;
+  background: #313131;
+  color: #ffffff;
+}
+.main-content {
+  padding-top: 165px;
+}
+.container {
+  margin-left: 249px;
+  margin-right: 145px;
+  padding-left: 45px;
+}
+.main-content__text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.main-content__text h1 {
+  font-weight: 900;
+  font-size: 52px;
+  line-height: 125%;
+  letter-spacing: 0.03em;
+}
+.main-content__text p {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+.main-content__about {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 171px;
+  max-width: 1506.8px;
+  padding-bottom: 146px;
+}
+
+.main-content__about__item {
+  display: flex;
+  align-items: top;
+  column-gap: 40px;
+  position: relative;
+}
+.main-content__about__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -21px; /* ширина полоски + 1px границы */
+  width: 0px; /* ширина полоски */
+  height: 100%;
+  border: 1px dashed #039481;
+}
+
+.main-content__about__item h3 {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.35;
+}
+.main-content__about__item p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.35;
+  font-feature-settings: "pnum" on, "lnum" on;
+
+  color: #ababab;
+}
+
+.main-content__about__item h4 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.25;
+  max-width: 487px;
+}
+.main-content__about__item h4 span {
+  font-size: 38px;
+}
+
+.main-content__title {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 1.35;
+  padding-bottom: 127px;
+
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+
+.main-content__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-content__list__item {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center; /* выравнивание по центру по горизонтали */
+  justify-content: flex-end; /* выравнивание текста по нижнему краю блока */
+}
+
+.main-content__list__item {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center; /* выравнивание по центру по горизонтали */
+  justify-content: center;
+}
+.main-content__list__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -45px; /* ширина полоски + 1px границы */
+  width: 0px; /* ширина полоски */
+  height: 100%;
+  border: 1px dashed #039481;
+}
+
+.main-content__list__item p {
+  margin-top: auto;
+}
+
+.main-content__list__item:last-child::after {
+  content: "400 місць";
+  position: absolute;
+  font-weight: 300;
+  font-size: 16.6562px;
+  line-height: 1.25;
+  font-feature-settings: "pnum" on, "lnum" on;
+  opacity: 0.7;
+  bottom: -20px;
+}
+
+/* Slaider */
+.gallery {
+  position: relative;
+
+  width: 2128px;
+  max-height: 712px;
+}
+
+.gallery-slider {
+}
+
+.gallery-slider__item {
+  width: 700px;
+  height: 712px;
+  padding-right: 8px;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: none;
+}
+
+.tns-item {
+  width: 700px;
+  height: 712px;
+}
+
+.gallery-slider-controls {
+  padding-top: 109px;
+  margin-top: auto;
+  text-align: center;
+}
+.gallery-slider-controls__arrows button {
+  padding: 5px;
+}
+
+.tns-nav {
+  position: absolute;
+  z-index: 9;
+  right: unset;
+  top: 789px;
+  left: 45.2%;
+
+  transform: translateX(-50%);
+  display: flex;
+}
+.tns-nav button {
+  width: 6px;
+  height: 6px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.tns-nav button.tns-nav-active {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%; /* чтобы создать круглую точку */
+  background-color: green; /* зеленый фон */
+  border: 2px solid #313131;
+  padding: 2px; /* добавляем отступ между фоном и линией */
+  box-shadow: 0 0 0 1px green; /* зеленая обводка */
+  transition: background-color 0.2s ease; /* добавляем transition */
+}
+
+/* technology */
+.technology {
+  padding-top: 163px;
+}
+
+.container {
+}
+
+.technology__title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 1.35;
+  padding-bottom: 81px;
+}
+
+.technology__block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 67px;
+  max-width: 854px;
+  max-height: 522px;
+}
+
+.technology__block__item {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.25;
+  max-width: 324px;
+}
+
+.technology__block__item__img-one {
+  padding-top: 32px;
+  width: 130px;
+  height: 139px;
+}
+.technology__block__item__img-two {
+  padding-top: 88px;
+  min-width: 96px;
+  min-height: 108px;
+}
+
+.technology__block__item__img-three {
+  padding-top: 44px;
+  min-width: 72px;
+  min-height: 176px;
+}
+.technology__block__item__img-four {
+  padding-top: 74px;
+  min-width: 108px;
+  min-height: 132px;
+}
+.technology__block__item__img-five {
+  padding-top: 66px;
+  min-width: 118px;
+  min-height: 127px;
+}
