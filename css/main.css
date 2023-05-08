@@ -246,11 +246,14 @@ body {
 .tns-item {
   width: 700px;
   height: 712px;
+  position: relative;
 }
 
 .gallery-slider-controls {
+  position: absolute;
+  left: 42.7%;
   padding-top: 109px;
-  margin-top: auto;
+  margin: 0 auto;
   text-align: center;
 }
 .gallery-slider-controls__arrows button {
@@ -288,10 +291,7 @@ body {
 
 /* technology */
 .technology {
-  padding-top: 163px;
-}
-
-.container {
+  padding-top: 272px;
 }
 
 .technology__title {
@@ -304,6 +304,7 @@ body {
 
 .technology__block {
   display: flex;
+  margin-bottom: 230px;
   justify-content: space-between;
   flex-wrap: wrap;
   row-gap: 67px;
@@ -343,4 +344,18 @@ body {
   padding-top: 66px;
   min-width: 118px;
   min-height: 127px;
+}
+
+/* plan */
+
+.plan {
+  padding-top: 93px;
+  background: #ffff;
+  color: black;
+}
+
+.plan__titel {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 1.35;
 }
